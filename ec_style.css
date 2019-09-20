@@ -28,7 +28,7 @@ ul{
 }
 
 .header, .header-content, .about, .services{
-    width: 75%;
+    width: 93%;
     margin: auto;
 }
 
@@ -149,7 +149,7 @@ p{
 =============================================*/
 
 .about, .services{
-    padding: 60px;
+    padding: 45px;
     text-align: center;
 }
 .about p{
@@ -161,19 +161,24 @@ p{
   background-size: cover;
 }
 
-.services p{
-    padding: 20px 0px 60px;
- 
+.services-content{
+    width: 97%;
 }
+
 .list-image{
     display: flex;
     justify-content: space-between;
 }
 
+.list-image p{
+    color: var(--primary-color);
+    /* background-color: #fff; */
+}
+
 .img{
-    height: 110%;
-    width: 70%;
-    margin-right: 10px;
+    height: 100%;
+    width: 75%;
+    margin-right: 0px;
 }
 
 /*=====  End of Main  ======*/
@@ -200,6 +205,7 @@ footer{
     display: flex;
     /* justify-content: space-between; */
     flex-direction: column; 
+    padding-bottom: 15px;
 }
 
 .form-input{
