@@ -76,7 +76,7 @@ p{
     background: url(https://source.unsplash.com/5fNmWej4tAA/) no-repeat;
     background-size: cover;
     width: 100%;
-    height: 538px;
+    height: 100vh;
     position: relative;
     /* z-index: 1; */
 }
@@ -86,7 +86,7 @@ p{
     position: absolute;
     top: 0;
     width: 100%;
-    height: 538px;
+    height: 100vh;
     background-color: rgba(0,0,0,0.7);
     /* z-index: 2; */
 }
@@ -106,6 +106,10 @@ p{
     color: #fff;
     font-size: 26px; 
     padding-top: 36px;
+}
+
+.logo{
+    background: none;
 }
 
 .navbar{
@@ -139,7 +143,9 @@ p{
 
 .fa-long-arrow-alt-down{
     position: relative;
-    top: 160px;
+    top: 250px;
+    animation: bounce 0.7s linear infinite;
+
 }
 
 /*=====  End of Header  ======*/
@@ -177,8 +183,8 @@ p{
 
 .img{
     height: 100%;
-    width: 75%;
-    margin-right: 0px;
+    width: 70%;
+    /* margin-right: 0px; */
 }
 
 /*=====  End of Main  ======*/
