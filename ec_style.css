@@ -28,7 +28,7 @@ ul{
 }
 
 .header, .header-content, .about, .services{
-    width: 75%;
+    width: 93%;
     margin: auto;
 }
 
@@ -73,10 +73,11 @@ p{
 =============================================*/
 
 .header-section{
-    background: url(https://source.unsplash.com/5fNmWej4tAA/) no-repeat;
+    /* background: url(https://source.unsplash.com/5fNmWej4tAA/) no-repeat; */
+    background-image: url(images/ec_background.jpg);
     background-size: cover;
     width: 100%;
-    height: 538px;
+    height: 100vh;
     position: relative;
     /* z-index: 1; */
 }
@@ -86,8 +87,8 @@ p{
     position: absolute;
     top: 0;
     width: 100%;
-    height: 538px;
-    background-color: rgba(0,0,0,0.7);
+    height: 100vh;
+    background-color: rgba(0,0,0,0.3);
     /* z-index: 2; */
 }
 
@@ -106,6 +107,10 @@ p{
     color: #fff;
     font-size: 26px; 
     padding-top: 36px;
+}
+
+.logo{
+    background: none;
 }
 
 .navbar{
@@ -139,8 +144,26 @@ p{
 
 .fa-long-arrow-alt-down{
     position: relative;
-    top: 160px;
+    top: 230px;
+    animation-name: bounce;
+    animation-duration: 1s;
+    animation-fill-mode: both;
+    animation-iteration-count: infinite;
+
+
+    /* transition-property: transform; */
+    /* transition: 1s linear; */
+    /* transition-timing-function: ease-in; */
 }
+
+@keyframes bounce{
+    from{ transform: translateY(10px)}
+    to{transform: translateY(40px)}
+}
+
+/* .fa-long-arrow-alt-down:hover{
+    transform: translateY(30px);
+} */
 
 /*=====  End of Header  ======*/
 
@@ -149,7 +172,7 @@ p{
 =============================================*/
 
 .about, .services{
-    padding: 60px;
+    padding: 45px;
     text-align: center;
 }
 .about p{
@@ -161,19 +184,24 @@ p{
   background-size: cover;
 }
 
-.services p{
-    padding: 20px 0px 60px;
- 
+.services-content{
+    width: 97%;
 }
+
 .list-image{
     display: flex;
     justify-content: space-between;
 }
 
+.list-image p{
+    color: var(--primary-color);
+    /* background-color: #fff; */
+}
+
 .img{
-    height: 110%;
+    height: 100%;
     width: 70%;
-    margin-right: 10px;
+    /* margin-right: 0px; */
 }
 
 /*=====  End of Main  ======*/
@@ -200,6 +228,7 @@ footer{
     display: flex;
     /* justify-content: space-between; */
     flex-direction: column; 
+    padding-bottom: 15px;
 }
 
 .form-input{
